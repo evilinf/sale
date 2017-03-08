@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>产品分类</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script language =javascript >
+        var curIndex=0;
+        //时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+        var timeInterval=2000;
+        var arr=new Array();
+        arr[0]="images/banner/f1.jpg";
+        arr[1]="images/banner/f2.jpg";
+        arr[2]="images/banner/f3.jpg";
+        setInterval(changeImg,timeInterval);
+        function changeImg()
+        {
+            var obj=document.getElementById("scroll");
+            if (curIndex==arr.length-1)
+            {
+                curIndex=0;
+            }
+            else
+            {
+                curIndex+=1;
+            }
+            obj.src=arr[curIndex];
+        }
+
+        $("#bra").on('mouseover',function(){
+            $('#bra-item').style.display="block";
+        });
+    </script>
+</head>
+<body>
+<div class="headBar maincolor">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a href="#" class="collection mainfont">收藏</a>
+            </div>
+            <div class="rightArea mainfont">
+                欢迎来到******！<a href="#" class="mainfont">[登陆]</a>
+                <a href="#" class="mainfont">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <!--<a href="#"><img src="images/logo.png" alt="CAMPANY"></a>-->
+                <a class="mainfont" style="color: white;font-size: 2.5em;">LOGO</a>
+            </div>
+            <div class="searchBox fl">
+                <input type="text" class="searchText fl"/>
+                <input type="button" class="searchBtn fl othercolor mainfont" value="搜 索"/>
+            </div>
+            <!--<div class="shopCar fr othercolor">-->
+            <!--<span class="shopText fl mainfont">购物车</span>-->
+            <!--<span class="shopNum fl mainfont">   0</span>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+</div>
+<div class="ht_15"></div>
+<div class="comWidth clearfix products">
+    <div class="leftArea">
+        <div class="leftNav">
+            <div class="nav_cont">
+                <h3>种类</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">文胸</a></li>
+                    <li><a href="#">内裤</a></li>
+                    <li><a href="#">睡衣</a></li>
+                    <li><a href="#">泳衣</a></li>
+                </ul>
+            </div>
+            <div class="nav_cont">
+                <h3>适用人群</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">少女</a></li>
+                    <li><a href="#">女士</a></li>
+                    <li><a href="#">男士</a></li>
+                    <li><a href="#">儿童</a></li>
+                </ul>
+            </div>
+            <div class="nav_cont">
+                <h3>价格</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">小于30￥</a></li><br>
+                    <li><a href="#">>=30￥,<50￥</a></li><br>
+                    <li><a href="#">>=50￥,<80￥</a></li><br>
+                    <li><a href="#">>=80￥</a></li><br>
+                </ul>
+            </div>
+            <div class="nav_cont">
+                <h3>罩杯</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">B杯</a></li>
+                    <li><a href="#">A杯</a></li>
+                    <li><a href="#">C杯</a></li>
+                    <li><a href="#">Free</a></li>
+                    <li><a href="#">D杯</a></li>
+                </ul>
+            </div>
+            <div class="nav_cont">
+                <h3>尺寸</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">34/75</a></li>
+                    <li><a href="#">36/80</a></li>
+                    <li><a href="#">32/70</a></li>
+                    <li><a href="#">38/85</a></li>
+                    <li><a href="#">Free</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">XL</a></li>
+                    <li><a href="#">XXL</a></li>
+                    <li><a href="#">XXXL</a></li>
+                    <li><a href="#">40/90</a></li>
+                    <li><a href="#">42/95</a></li>
+                </ul>
+            </div>
+            <div class="nav_cont">
+                <h3>厚薄</h3>
+                <ul class="navCont_list clearfix">
+                    <li><a href="#">中厚</a></li>
+                    <li><a href="#">加厚</a></li>
+                    <li><a href="#">薄</a></li>
+                    <li><a href="#">加加厚</a></li>
+                    <li><a href="#">超薄</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="rightArea">
+        <div class="banner_bar banner_big">
+            <ul class="imgBox">
+                <li><a href="" ><img src="images/banner/f1.png"></a></li>
+                <li><a href="" ><img src="images/banner/f2.png" id="scroll"></a></li>
+            </ul>
+            <div class="imgNum">
+                <a href="#" ></a><a href="#" class="active"></a><a href="#"></a><a href="#"></a>
+            </div>
+        </div>
+        <div class="ht_7"></div>
+        <div class="products_title">
+            <h3>文胸</h3>
+        </div>
+        <div class="products_lists clearfix">
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i1.jpg" alt=""></a>
+                    </div>
+                    <p>无痕</p>
+                    <p class="money">¥99.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i2.jpg" alt=""></a>
+                    </div>
+                    <p>无痕</p>
+                    <p class="money">¥99.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i3.jpg" alt=""></a>
+                    </div>
+                    <p>无痕</p>
+                    <p class="money">¥99.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i4.jpg" alt=""></a>
+                    </div>
+                    <p>无痕</p>
+                    <p class="money">¥99.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i5.jpg" alt=""></a>
+                    </div>
+                    <p>无痕</p>
+                    <p class="money">¥99.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="ht_15"></div>
+        <div class="products_title">
+            <h3>内裤</h3>
+        </div>
+        <div class="products_lists clearfix">
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i2.jpg" alt=""></a>
+                    </div>
+                    <p>舒适柔软 </p>
+                    <p class="money">¥39.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+            <div class="item">
+                <div class="item_img">
+                    <a href="#"><img src="images/intro/i6.jpg" alt=""></a>
+                </div>
+                <p>舒适柔软 </p>
+                <p class="money">¥39.00</p>
+                <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+            </div>
+        </div>
+            <div class="products_item">
+            <div class="item">
+                <div class="item_img">
+                    <a href="#"><img src="images/intro/i7.jpg" alt=""></a>
+                </div>
+                <p>舒适柔软 </p>
+                <p class="money">¥39.00</p>
+                <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+            </div>
+        </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i8.jpg" alt=""></a>
+                    </div>
+                    <p>舒适柔软 </p>
+                    <p class="money">¥39.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i1.jpg" alt=""></a>
+                    </div>
+                    <p>舒适柔软 </p>
+                    <p class="money">¥39.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i2.jpg" alt=""></a>
+                    </div>
+                    <p>舒适柔软 </p>
+                    <p class="money">¥39.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+            <div class="products_item">
+                <div class="item">
+                    <div class="item_img">
+                        <a href="#"><img src="images/intro/i4.jpg" alt=""></a>
+                    </div>
+                    <p>舒适柔软 </p>
+                    <p class="money">¥39.00</p>
+                    <p>评论:<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><a href="#">(78条)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ht_40"></div>
+<div class="footer">
+    <div class="comWidth">
+        <p>
+            <a href="">关于我们</a><i>|</i>
+            <a href="">联系我们</a><i>|</i>
+            <a href="">联系客服</a><i>|</i>
+            <a href="">商家注入</a><i>|</i>
+        </p>
+            <p>
+                Copyright&copy;2016 购物版权所有&nbsp;&nbsp;京ICP证A0000-0000号&nbsp;&nbsp;某市公安局额XX分局备案号:000000000000
+            </p>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>拉卡团队</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top mainback">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand mainfont" href="#">LOGO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav mainfont nav-list">
+                <li class="blue"><a href="message/message.html" target="_parent">消息 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">便签</a></li>
+                <li><a href="market/index.html" target="_parent">销售</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default mainfont">Submit</button>
+            </form>
+            <!--<div class="blue select">-->
+
+            <!--<ul class="">-->
+            <!--<li></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+
+
+            <select class="btn btn-default mainfont select" onchange="parent.location.href=this.value;" style="margin-top: 8px;margin-bottom: 8px;margin-left: 40%">
+                <option>请选择子功能</option>
+                <option value="inventory/inventory.html">库存管理</option>
+                <option value="member/member.html">成员管理</option>
+                <option value="conference/conference.html">会议管理</option>
+                <option value="report/report.html">报表管理</option>
+                <option value="system/system.html">系统管理</option>
+
+            </select>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+</body>
+</html>

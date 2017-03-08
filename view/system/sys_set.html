@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/message.css">
+    <!-- Favicons -->
+    <script src="../../js/own.js"></script>
+</head>
+<body>
+<div class="col-lg-9"  style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><b class="mainfont">系统设置</b>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form action="" method="post">
+                <p>系统报警设置（当库存少于阈值时，登入会有警告）</p>
+                <input type="text" class="form-control message" placeholder="内衣型号">
+                <a class="mainfont btn btn-default mainback" style="margin-right: 100px;float: right">设置</a>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="product">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>产品信息录入</p></div>
+        <input type="text" class="form-control message" placeholder="内衣型号">
+        <input type="text" class="form-control message" placeholder="颜色">
+        <input type="text" class="form-control message" placeholder="大小">
+        <input type="text" class="form-control message" placeholder="款式">
+        <a href="javascript:void(0)" onclick='cancel("product")' class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+<div id="library">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>馆信息录入</p></div>
+        <input type="text" class="form-control message" placeholder="馆名称">
+        <input type="text" class="form-control message" placeholder="地址">
+        <input type="text" class="form-control message" placeholder="联系电话">
+        <input type="text" class="form-control message" placeholder="负责人">
+        <a href="javascript:void(0)" onclick='cancel("library")' class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+<div id="jiameng">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>加盟商信息录入</p></div>
+        <input type="text" class="form-control message" placeholder="姓名">
+        <input type="text" class="form-control message" placeholder="地址">
+        <input type="text" class="form-control message" placeholder="联系电话">
+        <a href="javascript:void(0)" onclick='cancel("jiameng")' class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+</body>
+</html>

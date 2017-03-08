@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../js/amcharts.js" style="text/javascript"></script>
+    <script src="../../js/own.js" style="text/javascript"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <title></title>
+</head>
+<body>
+<div class="col-lg-9" style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">成员列表</a></div>
+            <div class="new mainback" id="send"><a class="mainfont" href="javascript:void(0)" onClick='getDialog("person")'>增加</a>
+            </div>
+        </div>
+        <form class="form-inline" style="margin:2% 0 0 2%;">
+            <div class="form-group">
+                <label class="sr-only">输入单位名</label>
+                <input type="text" class="form-control" placeholder="输入单位名" style="width: 300px;">
+                <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                <input type="text" class="form-control" style="width: 200px;float: right;" placeholder="输入部门名">
+            </div>
+        </form>
+        <div class="panel-body">
+            <ul class="list list-s">
+                <li class="list_item">
+                    <div class="item-left">
+                        <img src="../../image/iPhoto.jpg" class="item-img">
+                    </div>
+                    <div class="item-right" style="margin-left: 8%;">
+                        <div class="item-content" style="margin-top: -1%;font-size:0.9em;padding: 0;display: block;color: #999999;">
+                            <font><b>姓名：</b>willing person or organization</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>加入时间:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>所在单位:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>所在部门:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>职位:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>性别:</b>linkman name</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>出生年月:</b>linkman phone</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>家庭住址:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>政治面貌:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>婚姻状况:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>身体状况:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>学位:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>专业:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>技能:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>个人经历:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>所获荣誉:</b>willing product</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font><b>:</b>number of product</font>
+
+                        </div>
+                        <div class="item-select" style="float: none;clear: both;padding-top: 10px;">
+                            <a href="javascript:void(0)" onClick='getDialog("replay")' class="pale-pink">删除</a>
+                            <a class="pale-pink" href="javascript:void(0)" onClick='getDialog("person")'>修改</a>
+                            <a class="pale-pink" href="javascript:void(0)" onClick='getDialog("alliance")'>加盟商</a>
+                            <a class="pale-pink" href="javascript:void(0)" onClick='getDialog("sale-list")'>查看销售</a>
+                            <a class="pale-pink" href="javascript:void(0)" onClick='getDialog("conference");load();'>查看与会</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="replay">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要删除该条销售意向？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:void(0)" onClick='cancel("replay")' style="margin-left: 60%;" class="mainfont">取消</a>
+        <a style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+<div id="alliance">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要将该成员列入加盟商吗？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:void(0)" onClick='cancel("alliance")' style="margin-left: 60%;" class="mainfont">取消</a>
+        <a style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+
+<div id="person">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>成员信息</p></div>
+        <input type="text" class="form-control message" placeholder="姓名" style="margin: 5px 5px 5px 20px;width: 100px;display:inline;">
+        <p style="display: inline;">加入时间</p>
+        <input type="date" class="form-control message" placeholder="加入时间" style="margin: 5px 5px 5px 5px;width: 150px;display:inline;">
+        <select class="form-control message" style="margin: 5px 5px 5px 20px;width: 200px;display:inline;">
+            <option>所在单位</option>
+            <option>从数据库中取出来</option>
+        </select>
+        <select class="form-control message" style="margin: 5px 5px 5px 5px;width: 150px;display:inline;">
+            <option>所在部门</option>
+            <option>从数据库中取出来</option>
+        </select>
+        <select class="form-control message" style="margin: 5px 5px 5px 5px;width: 80px;display:inline;">
+            <option>职位</option>
+            <option>从数据库中取出来</option>
+        </select>
+        <select class="form-control message" style="margin: 5px 5px 5px 20px;width: 65px;display:inline;">
+            <option>男</option>
+            <option>女</option>
+        </select>
+        <p style="display: inline;">出生年月</p>
+        <input type="date" class="form-control message" style="margin: 5px 5px 5px 5px;width: 200px;display:inline;">
+        <input type="text" class="form-control message" placeholder="家庭住址" style="margin: 5px 20px 5px 20px;">
+        <select class="form-control message" style="margin: 5px 5px 5px 20px;width: 150px;display:inline;">
+            <option>政治面貌</option>
+            <option>团员</option>
+            <option>党员</option>
+            <option>其他</option>
+        </select>
+        <select class="form-control message" style="margin: 5px 5px 5px 5px;width: 150px;display:inline;">
+            <option>婚姻状况</option>
+            <option>已婚</option>
+            <option>未婚</option>
+        </select>
+        <select class="form-control message" style="margin: 5px 5px 5px 5px;width: 100px;display:inline;">
+            <option>学位</option>
+            <option>本科</option>
+            <option>专科</option>
+            <option>高中</option>
+            <option>硕士</option>
+            <option>博士</option>
+        </select>
+        <input type="text" class="form-control message" placeholder="身体状况" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="专业" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="技能" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="个人经历" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="所获荣誉" style="margin: 5px 20px 5px 20px;">
+        <a href="javascript:void(0)" onClick='cancel("person")' class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+<div id="sale-list">
+    <div class="box" style="width: 1000px;left: 20px;">
+        <div class="box-title mainback" style="height: 40px;"><p>销售记录</p></div>
+        <table class="table table-bordered">
+            <caption style="font-size: 1.5em;">当月销售记录</caption>
+            <thead>
+            <tr>
+                <th>日期</th>
+                <th>姓名</th>
+                <th>销售对象</th>
+                <th>销售产品</th>
+                <th>销售数量</th>
+                <th>销售金额</th>
+                <th>销售单号</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="javascript:void(0)" onClick='cancel("sale-list")' class="mainfont" style="margin-left: 800px;">确定</a>
+        <button type="submit" class="btn btn-default mainfont mainback" onClick="javascript:location.href='sale_list.html'">查看全部销售记录</button>
+    </div>
+</div>
+<div id="conference">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>与会记录</p></div>
+        <div id="chartdiv" style=" margin: -.8em auto; text-align:center; width: 90%; height: 200px"></div>
+
+        <table class="table table-bordered">
+            <caption style="font-size: 1.5em;">当月与会记录</caption>
+            <thead>
+            <tr>
+                <th>会议时间</th>
+                <th>姓名</th>
+                <th>会议主题</th>
+                <th>参与状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="javascript:void(0)" onClick='cancel("conference")' class="mainfont">确定</a>
+        <button type="submit" class="btn btn-default mainfont mainback" onClick="javascript:location.href='conference_list.html'">查看全部</button>
+</div>
+    </div>
+</body>
+</html>

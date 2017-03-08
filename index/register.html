@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<!--<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">-->
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/login1.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		function check(){
+			document.getElementById("perfect-register").style.display="block";
+		}
+		function cancel(){
+			document.getElementById("perfect-register").style.display="none";
+		}
+	</script>
+</head>
+<body id="register">
+	<!-- site-nav -->
+	<div id="site-nav">
+		<div class="container sn-container">
+			<p class="login-info">
+				<i class="iconfont sn-icon">&#xe659;</i>
+				<a href="main.html">首页</a>
+				<em>欢迎~~~</em>
+				<a href="login.html" target="_top">请登录</a>
+				<a href="register.html" target="_top">免费注册</a>
+			</p>
+			<ul class="sn-quick-menu">
+				<li class="menu-item">
+					<a href="">我的账户 <b class="triangle "></b> </a>
+					<ul class="sub-menu">
+						<li>
+							<a href="#" target="_top">已买到的宝贝</a>
+						</li>
+						<li>
+							<a href="#" target="_top">已卖出的宝贝</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sn-cart">
+					<i class="iconfont sn-icon">&#xe628;</i>
+					<a href="#" target="_top">购物车</a>
+				</li>
+				<li class="sn-favorite menu-item">
+					<a href="#">收藏夹<b class="triangle"></b> </a>
+				</li>
+				<li class="sn-separator">|</li>
+				<li class="sn-sitemap menu-item">
+					<i class="iconfont sn-icon">&#xe613;</i>
+					<a href="#" target="_top">网站导航 <b class="triangle"></b></a>
+					<div class="sub-menu">
+						<div class="site-hot">
+							<h2>分类导航<span>Type</span></h2>
+							<ul class="site-list">
+								<li><a href="#">文胸</a></li>
+								<li><a href="#">内裤</a></li>
+								<li><a href="#">泳衣<i class="sn-sitemap-icon sn-sitemap-icon-new"></i></a></li>
+								<li><a href="#">睡衣<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+								<li><a href="#">保暖</a></li>
+								<li><a href="#">护肤<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+								<li><a href="#">运动</a></li>
+								<li><a href="#">男士</a></li>
+								<li><a href="#">女士<i class="sn-sitemap-icon sn-sitemap-icon-hot"></i></a></li>
+								<li><a href="#">儿童</a></li>
+
+							</ul>
+						</div>
+						<div class="site-hot">
+							<h2>热点推荐<span>Hot</span></h2>
+							<ul class="site-list">
+								<li><a href="#">爆款</a></li>
+								<li><a href="#">新品</a></li>
+								<li><a href="#">促销</a></li>
+							</ul>
+						</div>
+						<div class="site-hot">
+							<h2>服务指南 <span>Help</span></h2>
+							<ul class="site-list">
+								<li><a href="#">帮助中心</a></li>
+								<li><a href="#">品质保障</a></li>
+								<li><a href="#">特色服务</a></li>
+								<li><a href="#">七天退换货</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div><!-- end site-nav -->
+	<!-- header -->
+	<div id="header">
+		<div class="container hd-container">
+			<h1 class="hd-logo">
+				<!--<a href="index.html"><i class="iconfont logo-icon">&#xe632;</i></a>-->
+				<a class="logofont">LOGO</a>
+			</h1>
+			<div class="hd-extra form">
+				<form method="post" action="#" id="search">
+					<fieldset>
+						<legend>搜索</legend>
+						<input type="text" name="search-box" value="" title="请输入搜索内容">
+						<input type="submit" name="search-btn" value="搜索">
+					</fieldset>
+				</form>
+				<ul class="search-tip">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- register-con -->
+	<div class="register">
+		<form method="post" action="">
+			<input type="text" name="username" placeholder="手机号/邮箱">
+			<div class="rbutton maincolor" style="margin-bottom: 10px;"><a class="mainfont">获取验证码</a></div>
+			<input type="text" name="username" placeholder="验证码">
+			<div class="rbutton maincolor"><a class="mainfont" href="javascript:check()">验 证</a></div>
+			<!--<input type="button" value="" class="maincolor" style="">-->
+		</form>
+	</div>
+	<div id="perfect-register">
+		<div class="title"><p class="whitefont">验证成功，请完善下列信息</p></div>
+		<form action="" method="" class="forml" style="margin-top: 40px;">
+			<input type="text" name="username" placeholder="用户名">
+			<input type="password" name="username" placeholder="密码">
+			<input type="password" name="username" placeholder="密码确认">
+			<div>
+				<button type="submit" class="submit mainfont">Submit</button>
+				<a style="float: right;margin-right: 10%; margin-top: 10px;" class="mainfont" href="javascript:cancel()">取消</a>
+
+			</div>
+		</form>
+	</div>
+	<!-- end register-con -->
+	<!-- footer -->
+
+	<div id="footer">
+		<div class="tmall-copyright">
+			<div class="cr-container">
+				<p class="footer-tmallinfo">
+					<a href="#">关于我们</a>
+					<a href="#">客服中心</a>
+					<a href="#">加入我们</a>
+					<a href="#">网站合作</a>
+					<a href="#">法律声明</a>
+					<a href="#">知识产权</a>
+					<a href="#">廉正举报</a>
+					<a href="#">规则意见征集</a>
+				</p>
+				<div class="footer-copyright">
+					<span>增值电信业务经营许可证：<a href="#">浙B2-20110446</a></span>
+					<span>网络文化经营许可证：<a href="#">浙网文[2015]0295-065号</a></span>
+					<span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号</span><br>
+					<span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+					<b>@版权所有</b>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/message.css">
+    <!-- Favicons -->
+    <script src="../../js/own.js"></script>
+</head>
+<body>
+<div class="col-lg-9"  style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><b class="mainfont">账户管理</b>
+                <a class="mainfont new mainback"  href="javascript:void(0)" onclick='getDialog("new-box")' style="padding-top: 3px;">新增</a>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline" style="margin:2% 0 0 2%;">
+                <div class="form-group">
+                    <p><input type="text" class="form-control" placeholder="搜索成员" style="width: 300px;">
+                        <button type="submit" class="btn btn-default" style="float: right;">查找</button>
+                    </p>
+                </div>
+            </form>
+            <table class="table table-bordered">
+                <thead>
+                <tr><th>账户</th>
+                    <th>成员姓名</th>
+                    <th>成员部门</th>
+                    <th>成员详情</th>
+                    <th>账户密码</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td><a href="javascript:void(0)" onClick='getDialog("new-box")' class="mainfont">修改</a>
+                        <a href="javascript:void(0)" onClick='getDialog("replay")' class="mainfont">删除</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="new-box">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>新增账户</p></div>
+        <input type="text" class="form-control message" placeholder="账户">
+        <input type="text" class="form-control message" placeholder="成员姓名">
+        <select class="form-control message">
+            <option>所属部门</option>
+        </select>
+        <input type="text" class="form-control message" placeholder="账户密码">
+        <a href="javascript:void(0)" onclick='cancel("new-box")' class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+<div id="replay">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要删除该个账户？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:void(0)" onClick='cancel("replay")' style="margin-left: 60%;" class="mainfont">取消</a>
+        <a style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+</div>
+</body>
+</html>

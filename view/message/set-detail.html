@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/message.css">
+    <!-- Favicons -->
+
+    <script style="text/javascript">
+        var id;
+        function getdialog(id){
+            document.getElementById(id).style.display="block";
+        }
+        function cancel(){
+            document.getElementById("prompt-success").style.display="none";
+        }
+    </script>
+</head>
+<body>
+<div class="col-lg-9"  style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">设置明细显示内容</a></div>
+        </div>
+        <div class="panel-body">
+            <input type="radio" placeholder="" style="margin-top: -10px;margin-left: 5%;margin-bottom: 10%;">是否显示昨日明细
+            <p>选择显示字段</p>
+            <input type="checkbox" placeholder="" style="margin-left: 5%;">销售情况
+            <input type="checkbox"  placeholder="" style="margin-left: 5%;">出库情况
+            <input type="checkbox"  placeholder="" style="margin-left: 5%;">入库情况
+            <input type="checkbox"  placeholder="" style="margin-left: 5%;">加盟情况
+            <p style="margin-bottom: 5%;"></p>
+            <p>选择提醒重复次数</p>
+            <input type="radio" placeholder="" style="margin-left: 5%;">每次进入都提醒
+            <input type="radio"  placeholder="" style="margin-left: 5%;">一天提醒一次
+            <p style="margin-bottom: 5%;"></p>
+            <input type="reset"  placeholder="重置" class="btn mainfont btn-default" style="margin-left: 40%;">
+            <button type="button" class="btn btn-default mainfont mainback" onclick='getdialog("prompt-success")'>Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="prompt-success">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/success.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    该提醒已成功设置！
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:cancel()" style="margin-left: 60%;" class="mainfont">确定</a>
+    </div>
+</div>
+</body>
+</html>

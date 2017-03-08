@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>成员管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/member.css">
+    <!-- Favicons -->
+
+    <!-- JavaScripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script style="text/javascript">
+        function add(){
+            document.getElementById("add").style.display="block";
+        }
+        function update(){
+            document.getElementById("person").style.display="block";
+        }
+        function cancel(){
+            document.getElementById("add").style.display="none";
+            document.getElementById("update").style.display="none";
+            document.getElementById("person").style.display="none";
+        }
+        function deletem(){
+            if(confirm("你确定要删除该成员吗？")){
+            }else{
+                alter("取消");
+            }
+        }
+        function updatem(){
+//            window.open('admin.html','newwindow','height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, ' +
+//                    'resizable=no,location=n o, status=no')
+            document.getElementById("update").style.display="block";
+        }
+    </script>
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+    </div>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #4bca2d;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #ffffff">LOGO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" style="color: white">消息 <span class="sr-only">(current)</span></a></li>
+                <li ><a href="#"  style="color: white">便签</a></li>
+                <li ><a href="#"  style="color: white">销售</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" style="color: #4bca2d">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <!--<ul class="nav navbar-nav navbar-right">-->
+            <!--<div class="form-group">-->
+            <select class="btn btn-default" style="margin-top: 8px;margin-bottom: 8px;margin-left: 40%">
+                <option value="">成员管理</option>
+                <option>库存管理</option>
+                <option>会议管理</option>
+                <option>报表管理</option>
+                <option>系统管理</option>
+            </select>
+            <!--</div>-->
+            <!--</ul>-->
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="person-in">
+    <div class="item-left" style="margin: 50px;width: 80px;height: 80px;border: 2px solid white;border-radius: 5px;">
+        <img src="../image/iPhoto.jpg" class="item-img" style="width: 75px;height: 75px;">
+    </div>
+    <div class="item-right" style="margin-top: 3%;margin-left: 11%;">
+        <div class="person-infor">
+            <p>姓名：name <br>                                      所属机构：company<br>
+                所属部门：department<br>
+                职位：学生<br>                                        联系方式：************<br>
+                年龄：age
+            </p>
+        </div>
+    </div>
+</div>
+<div id="person">
+    <div class="member-back" style="height: 50%;"><img src="../image/iPhoto.jpg" style="height: 50%;"></div>
+    <div class="photo" style="margin-top: -40%;"><img src="../image/photo.png" style="margin-top: -40%;"></div>
+    <div class="member-info">
+        <input type="text" class="form-control message per-width" placeholder="姓名">
+        <input type="text" class="form-control message per-width" placeholder="年龄">
+        <input type="text" class="form-control message per-width" placeholder="联系方式">
+        <input type="text" class="form-control message per-width" placeholder="职位">
+        <input type="text" class="form-control message per-width" placeholder="部门">
+        <input type="text" class="form-control message per-width" placeholder="机构">
+        <a href="javascript:cancel()" style="margin-top: -20%;margin-left: 50%;margin-right: 2%;">取消</a>
+        <button type="submit" class="btn btn-default theme" style="height: 3%;font-size: 0.5em; margin-top: -5%;">Submit</button>
+        <!--所属机构：company<br>-->
+        <!--所属部门：department<br>-->
+        <!--职位：position<br>-->
+        <!--年龄：age<br>-->
+        <!--联系方式：phone number-->
+    </div>
+</div>
+<div class="person-ask">
+    <a class="btn btn-default" style="margin-top: 0.5%;background-color: #4bca2d;color: white;margin-left: 83%"
+            href="javascript:add()">
+        增加成员</a>
+    <a class="btn btn-default" style="margin-top:-2.5%;margin-left: 90%" href="javascript:update()">
+        修改个人资料</a>
+</div>
+<div class="box" style="margin-left: 30%;height: 400px; float: left;position: fixed;margin-top: -8%;" id="add">
+    <div class="box-title" style="height: 40px;"><p>添加成员</p></div>
+    <input type="text" class="form-control message" placeholder="成员姓名">
+    <input type="text" class="form-control message" placeholder="年龄">
+    <input type="text" class="form-control message" placeholder="联系方式">
+    <input type="text" class="form-control message" placeholder="职位">
+    <input type="text" class="form-control message" placeholder="所属部门">
+    <input type="text" class="form-control message" placeholder="所属机构">
+    <a href="javascript:cancel()">取消</a>
+    <button type="submit" class="btn btn-default theme">Submit</button>
+</div>
+<div class="box" style="margin-left: 30%;margin-top: -8%;height: 400px;position: fixed;" id="update">
+    <div class="box-title" style="height: 40px;"><p>修改个人信息</p></div>
+    <input type="text" class="form-control message" placeholder="姓名">
+    <input type="text" class="form-control message" placeholder="年龄">
+    <input type="text" class="form-control message" placeholder="联系方式">
+    <input type="text" class="form-control message" placeholder="职位">
+    <input type="text" class="form-control message" placeholder="所属部门">
+    <input type="text" class="form-control message" placeholder="所属机构">
+    <a href="javascript:cancel()">取消</a>
+    <button type="submit" class="btn btn-default theme">Submit</button>
+</div>
+<ul class="member">
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+    <li class="member-item">
+        <div class="member-back"><img src="../image/iPhoto.jpg"></div>
+        <div class="photo"><img src="../image/photo.png"></div>
+        <div class="member_name">name</div>
+        <div class="member_oper">
+            <a class="btn-default" style="margin-left: 120px;" href="javascript:deletem()">
+                删除</a>
+            <a class="btn-default" style="margin-left: 160px;margin-top: -20px;" href="javascript:updatem()">
+                修改</a>
+        </div>
+        <div class="member-info">
+            所属机构：company<br>
+            所属部门：department<br>
+            职位：position<br>
+            年龄：age<br>
+            联系方式：phone number
+        </div>
+    </li>
+</ul>
+
+</body>
+</html>

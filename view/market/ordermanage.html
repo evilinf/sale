@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <title></title>
+    <script style="text/javascript">
+        function send(){
+            document.getElementById("new-box").style.display="block";
+        }
+        function sale(){
+            document.getElementById("sale-box").style.display="block";
+        }
+        function cancel(){
+            document.getElementById("new-box").style.display="none";
+            document.getElementById("replay").style.display="none";
+            document.getElementById("sale-box").style.display="none";
+        }
+        function reply(){
+            document.getElementById("replay").style.display="block";
+        }
+    </script>
+</head>
+<body>
+<div class="col-lg-9" style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">订单管理</a></div>
+            <div class="new mainback" id="send"><a class="mainfont" href="javascript:sale()">增加</a>
+            </div>
+        </div>
+        <form class="form-inline" style="margin:2% 0 0 2%;">
+            <div class="form-group">
+                <label class="sr-only">输入商品型号</label>
+                <input type="text" class="form-control" placeholder="输入商品型号" style="width: 300px;">
+                <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                <input type="date" class="form-control" style="width: 200px;float: right;">
+            </div>
+        </form>
+        <div class="panel-body">
+            <ul class="list list-s">
+                <li class="list_item">
+                    <div class="item-left">
+                        <img src="../../image/iPhoto.jpg" class="item-img">
+                    </div>
+                    <div class="item-right">
+                        <div class="item-content" style="margin-top: 40px;font-size: 10px;padding: 0;display: block;">
+                            <p><b>客户名称：</b>&nbsp;&nbsp;&nbsp;&nbsp;willing person or organization</p>
+                            <p><b>订单时间编号:</b>&nbsp;&nbsp;&nbsp;&nbsp;linkman name</p>
+                            <p><b>是否付款:</b>&nbsp;&nbsp;&nbsp;&nbsp;linkman phone</p>
+                            <p><b>是否出货:</b>&nbsp;&nbsp;&nbsp;&nbsp;linkman phone</p>
+                            <p><b>交货地址:</b>&nbsp;&nbsp;&nbsp;&nbsp;linkman phone</p>
+                            <p><b>产品代码/名称:</b>&nbsp;&nbsp;&nbsp;&nbsp;willing product</p>
+                            <p><b>型号/规格/颜色:</b>&nbsp;&nbsp;&nbsp;&nbsp;number of product</p>
+                            <p><b>总数量:</b>&nbsp;&nbsp;&nbsp;&nbsp;estimated quatity</p>
+                            <p><b>单价:</b>&nbsp;&nbsp;&nbsp;&nbsp;estimated time</p>
+                            <p><b>金额:</b>&nbsp;&nbsp;&nbsp;&nbsp;happened time</p>
+                            <p><b>销售负责人:</b>&nbsp;&nbsp;&nbsp;&nbsp;estimated selling price</p>
+                            <p><b>其他:</b>&nbsp;&nbsp;&nbsp;&nbsp;other</p>
+                        </div>
+                        <div class="item-select" style="float: none;clear: both;">
+                            <a href="javascript:reply()" class="pale-pink">删除</a>
+                            <a class="pale-pink" href="javascript:sale()">修改</a>
+                            <a class="pale-pink" href="javascript:send()">创建售后回访</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="replay">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要删除该条销售意向？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:cancel()" style="margin-left: 60%;" class="mainfont">取消</a>
+        <a href="javascript:send()" style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+
+<div id="new-box">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>售后回访</p></div>
+        <input type="text" class="form-control message" placeholder="订单时间编号" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="回访人" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="客户反馈" style="margin: 5px 20px 5px 20px;">
+        <input type="date" class="form-control message" placeholder="回访时间" style="margin: 5px 20px 5px 20px;">
+        <textarea class="form-control message" placeholder="备注" rows="1" style="margin: 5px 20px 5px 20px;"></textarea>
+        <a href="javascript:cancel()" class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+<div id="sale-box">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>销售订单</p></div>
+        <input type="text" class="form-control message" placeholder="客户名称" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="订单时间编号" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="交货地址" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="产品代码/名称" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="型号/规格/颜色" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="总数量" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="单价" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="金额" style="margin: 5px 20px 5px 20px;">
+        <textarea class="form-control message" placeholder="备注" rows="1" style="margin: 5px 20px 5px 20px;"></textarea>
+        <input type="radio" name="radiobutton" value="radiobutton" style="margin-left: 20px;">是否付款
+        <input type="radio" name="radiobutton" value="radiobutton" style="margin-left: 20px;">是否出货<br>
+        <a href="javascript:cancel()" class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+</body>
+</html>

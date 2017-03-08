@@ -1,0 +1,28 @@
+.hedNavMain{
+    left: 300px!important;
+    float: right;
+    z-index: 200;
+}
+.float{
+    width: 30px;
+    height: auto;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    border-radius: 5px;
+}
+.floatul{
+    text-align: center;
+    line-height: 20px;
+}
+.floatul li{
+    border-bottom: 1px solid white;
+}
+.floatul li:hover{
+    /*background-color: rgb(252, 229, 223);*/
+    background-color: white;
+}
+
+
+
+

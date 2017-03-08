@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../js/own.js" style="text/javascript"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <title></title>
+</head>
+<body>
+<div class="col-lg-9" style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">销售记录</a></div>
+        </div>
+        <form class="form-inline" style="margin:2% 0 0 2%;">
+            <div class="form-group">
+                <label class="sr-only">输入单位名</label>
+                <input type="text" class="form-control" placeholder="输入单位名" style="width: 300px;">
+                <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                <input type="text" class="form-control" style="width: 200px;float: right;" placeholder="输入部门名">
+            </div>
+        </form>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <caption style="font-size: 1.5em;">当月销售记录</caption>
+                <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>姓名</th>
+                    <th>销售对象</th>
+                    <th>销售产品</th>
+                    <th>销售数量</th>
+                    <th>销售金额</th>
+                    <th>销售单号</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td><a href="javascript:void(0)" onclick='getDialog("sale-list")' style="color: black">查看详情</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="conference">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>与会记录</p></div>
+        <div id="chartdiv" style=" margin: -.8em auto; text-align:center; width: 90%; height: 200px"></div>
+        <script type="text/javascript">
+            var chart;
+            var legend;
+            var charDate = [{status: "到", value: 20},{status: "jia", value: 8},{status: "kuang", value: 3}];
+            AmCharts.ready(function() {
+                // 饼图
+                chart = new AmCharts.AmPieChart();
+                chart.dataProvider = charDate;
+                chart.titleField = "status";
+                chart.valueField = "value";
+                chart.outlineColor = "";
+                chart.outlineAlpha = 0.8;
+                chart.outlineThickness = 2;
+                // 3D
+                chart.depth3D = 20;
+                chart.angle = 30;
+                // 图形写入
+                chart.write("chartdiv");
+            });
+        </script>
+        <table class="table table-bordered">
+            <caption style="font-size: 1.5em;">当月与会记录</caption>
+            <thead>
+            <tr>
+                <th>会议时间</th>
+                <th>姓名</th>
+                <th>会议主题</th>
+                <th>参与状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+                <td>Table cell</td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="javascript:void(0)" onclick='cancel("conference")' class="mainfont">确定</a>
+        <button type="submit" class="btn btn-default mainfont mainback">查看全部</button>
+    </div>
+</div>
+</body>
+</html>

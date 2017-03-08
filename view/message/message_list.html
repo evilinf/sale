@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/message.css">
+    <!-- Favicons -->
+
+    <script style="text/javascript">
+        var id;
+        function getdialog(id){
+            document.getElementById(id).style.display="block";
+        }
+        function cancel(){
+            document.getElementById("new-box").style.display="none";
+            document.getElementById("replay").style.display="none";
+            document.getElementById("prompt").style.display="none";
+            document.getElementById("note-box").style.display="none";
+        }
+    </script>
+</head>
+<body>
+<div class="col-lg-9"  style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">消息</a></div>
+            <div class="new mainback" id="send"><a class="mainfont"  href="javascript:void(0)" onclick='getdialog("new-box")' >发送消息</a>
+                <div id="new-box">
+                    <div class="box">
+                        <div class="box-title mainback" style="height: 40px;"><p>发送消息</p></div>
+                        <input type="text" class="form-control message" placeholder="消息主题">
+                        <textarea class="form-control message" placeholder="消息详情" rows="10"></textarea>
+                        <p>选择哪些人可看见该条消息（不选默认全可见）</p>
+                        <input type="text" class="form-control message" placeholder="搜索联系人" style="margin-top: -10px;">
+                        <a href="javascript:cancel()" class="mainfont">取消</a>
+                        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline" style="margin:2% 0 0 2%;">
+                <div class="form-group">
+                    <label class="sr-only">相关内容</label>
+                    <input type="text" class="form-control" placeholder="相关内容" style="width: 300px;">
+                    <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                    <input type="date" class="form-control" style="width: 200px;float: right;">
+                </div>
+            </form>
+            <ul class="list list-s" style="margin-left: 2%;margin-right: 2%;">
+                <li class="list_item">
+                    <div class="item-left">
+                        <img src="../../image/iPhoto.jpg" class="item-img">
+                    </div>
+                    <div class="item-right" style=";margin-top: 10px;">
+                        <div class="pale-pink">备注(团队通知/某个人)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <time>2016/11/5 9:00</time>
+                        </div><br>
+                        <!--<div class="item-content" style="">-->
+                            <h4 style="margin: 5px 0 0 0;">消息标题</h4>
+                            <p class="mainfont" style="font-size: 1.2em;">
+                                消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+                            </p>
+                        <!--</div>-->
+                        <div class="item-select">
+                            <a href="javascript:void(0)" onclick='getdialog("replay")' class="pale-pink">回复</a>
+                            <a class="pale-pink" href="javascript:void(0)" onclick='getdialog("note-box")'>添加到便签</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="note-list blue mainfont">
+                    <p>便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容
+                        便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容
+                        便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容便签内容</p>
+                    <div class="item-select" style="margin-left: 8%;">
+                        <a href="javascript:void(0)" onclick='getdialog("prompt")' class="pale-pink">删除</a>
+                        <a class="pale-pink" href="javascript:void(0)" onclick='getdialog("note-box")'>修改便签</a>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="sale-detail mainfont">
+                    <table class="table table-bordered">
+                        <caption style="font-size: 1.5em;">昨日明细（2016年11月11日）</caption>
+                        <thead>
+                        <tr>
+                            <th>销售情况</th>
+                            <th>出库情况</th>
+                            <th>入库情况</th>
+                            <th>加盟情况</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>注：</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="replay">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/iPhoto.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >备注
+                    <time>2016/11/5 9:00</time>
+                </div>
+                <div class="item-content" style="width: 350px;">
+                    answercontent answercontentanswercontentanswercontentanswercontentanswercontentanswercontentanswercontent
+                </div>
+                <div class="item-select">
+                    <a class="pale-pink">回复</a>
+                    <a class="pale-pink">添加到便签</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin:20px 40px 10px 40px;width:80%;">
+        <input type="text" class="form-control message" placeholder="回复" style="width: 100%;">
+        <a href="javascript:cancel()" style="margin-left: 70%;" class="mainfont">取消</a>
+        <a href="" style="margin-left: 5%;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+<div id="prompt">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要执行删除操作？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;">
+        <a href="javascript:cancel()" style="margin-left: 60%;" class="mainfont">取消</a>
+        <a href="javascript:void(0)" onclick='getdialog("new-box")' style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+<div id="note-box">
+    <div class="box">
+        <div class="box-title mainback" style="height: 40px;"><p>销售订单</p></div>
+        <textarea class="form-control message" placeholder="便签内容" rows="1" style="margin: 5px 20px 5px 20px;"></textarea>
+        <input type="datetime" class="form-control message" placeholder="提醒时间" style="margin: 5px 20px 5px 20px;">
+        <input type="text" class="form-control message" placeholder="提醒人" style="margin: 5px 20px 5px 20px;">
+        <input type="file" class="form-control message" placeholder="背景图" style="margin: 5px 20px 5px 20px;">
+        <input type="radio" name="backgroundcolor" value="radiobutton" style="margin-left: 20px;background-color: white;">白色
+        <input type="radio" name="backgroundcolor" value="radiobutton" style="margin-left: 20px;background-color: pink;">粉色<br>
+        <a href="javascript:cancel()" class="mainfont">取消</a>
+        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+    </div>
+</div>
+</body>
+</html>

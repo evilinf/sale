@@ -1,0 +1,105 @@
+.note-list{
+    width: 105%;
+    height: auto;
+    border-radius: 10px;
+    float: none;clear: both;
+    margin: 10% 9% 10% -5%;
+    list-style: none;
+}
+.note-list p{font-size: 1.5em;word-wrap: break-word;line-height: 20px;}
+.sale-detail{
+    width: 105%;
+    height: auto;
+    border-radius: 10px;
+    float: none;clear: both;
+    margin: -8% 9% 10% -5%;
+    list-style: none;
+}
+.triangle{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top-color: #bbb;
+    border-bottom: none;
+}
+.sub-menu{
+    position: absolute;
+    top: 32px;
+    left: 0;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    z-index: 1000;
+    display: none;
+}
+.sub-menu li{
+    line-height: 1.8;
+    text-decoration: none;
+}
+.sub-menu a{
+    color: #666;
+}
+.left{
+    float: left;
+}
+.p{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+}
+.menu-item:hover{
+    background: #fff;
+}
+#list,#list ul{
+    background-color: rgb(252, 229, 223);
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+#list a{
+    color: #999999;
+    text-align: center;
+}
+#list a:link,#list a:visited{
+    display:block;
+    text-decoration:none;
+    padding-left:1em;
+    color:#999999;
+}
+#list ul{
+    display:none;
+    position:absolute;
+    padding:0;
+}
+#list ul li{
+    border:0 none transparent;
+    border: 1px solid #ffffff;
+    background-color:rgb(252, 229, 223);
+    font-size:100%;
+    margin-bottom:-1px;
+    margin-top:1px;
+    padding:0;
+    list-style-type:none;
+    text-align: center;
+    color:#999999;
+}
+#list li:hover ul{
+    display:block;
+}
+.ul{
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+.ul li{
+    text-decoration: none;
+    float: left;
+    margin-right: 20px;
+}

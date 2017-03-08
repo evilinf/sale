@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .opacity{
+            background-image: url("images/proCategory/pic_02.png");
+            opacity: 0.5;
+            height: 200px;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        .linear-gradient{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(right top, #e8e763, #c8412c);
+            /*background: -moz-linear-graident(right top,#0aa6e8,#19c8a9);*/
+            background: -o-linear-gradient(right top,#e8e763, #c8412c);
+            background: -webkit-gradient(linear,right top,left bottom,from(#e8e763),to(#c8412c));
+        }
+        .radial-gradient{
+            width: 100%;
+            height: 200px;
+            /*background: radial-gradient(left bottom,circle cover,#0000ff 50px,#ff0000 150px);*/
+            /*background: -moz-radial-gradient(left bottom,circle cover,#0000ff 50px,#ff00000150px);*/
+            background: -webkit-gradient(radial,left bottom,50,left bottom,150,from(#e8e763),to(#c8412c));
+            background: -webkit-gradient(radial,50% 50%,0,50% 50%,70,from(#0000ff),to(#FF0000));
+            /*background: -webkit-radial-gradient(center center,circle,#080,#ff0,#f00);*/
+            background: -webkit-gradient(radial,50% 50%,0,50% 50%,70,from(#0000ff),to(#FF0000));
+            /*background: -webkit-radial-gradient(circle contain,#f0f,#ff0,#00f);*/
+
+        }
+    </style>
+</head>
+<body>
+<div class="opacity">opacity:0.1;</div>
+<div class="linear-gradient">linear-gradient</div>
+<div class="radial-gradient">radial-gradient</div>
+</body>
+</html>

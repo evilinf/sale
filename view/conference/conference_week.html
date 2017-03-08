@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/message.css">
+    <!-- Favicons -->
+    <script src="../../js/own.js"></script>
+</head>
+<body>
+<div class="col-lg-9"  style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">周会</a></div>
+            <div class="new mainback" id="send"><a class="mainfont"  href="javascript:void(0)" onclick='getDialog("new-box")' >新增</a>
+                <div id="new-box">
+                    <div class="box">
+                        <div class="box-title mainback" style="height: 40px;"><p>周会记录</p></div>
+                        <select class="form-control message">
+                            <option>会议类型</option>
+                            <option>骨干会</option>
+                            <option>成长分享会</option>
+                            <option>沙龙会</option>
+                        </select>
+                        <input type="text" class="form-control message" placeholder="周会主题">
+                        <input type="text" class="form-control message" placeholder="演讲人">
+                        <input type="text" class="form-control message" placeholder="与会人员">
+                        <textarea class="form-control message" placeholder="会议内容" rows="5"></textarea>
+                        <textarea class="form-control message" placeholder="会议总结" rows="5"></textarea>
+                        <input type="text" class="form-control message" placeholder="备注">
+                        <a href="javascript:void(0)" onClick='cancel("new-box")' class="mainfont">取消</a>
+                        <button type="submit" class="btn btn-default mainfont mainback">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form class="form-inline" style="margin:2% 0 0 2%;">
+                <div class="form-group">
+                    <label class="sr-only">相关内容</label>
+                    <input type="text" class="form-control" placeholder="相关内容" style="width: 300px;">
+                    <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                    <input type="date" class="form-control" style="width: 200px;float: right;">
+                </div>
+            </form>
+            <ul class="list list-s" style="margin-left: 2%;margin-right: 2%;margin-top: 60px;">
+                <li class="list_item">
+                    <div class="item-right" style="border: 1px solid #E9BAC1;border-radius: 5px;width: 100%;display:block;">
+                        <div class="pale-pink" style="margin: 5px 0 0 5px;display: block;">周会主题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <time>2016/11/5 9:00</time>
+                        </div><p style="height: 20px;"></p>
+                        <p class="mainfont newp">会议类型：
+                        </p>
+                        <p class="mainfont newp">演讲人：
+                        </p>
+                        <p class="mainfont newp">与会人员：
+                        </p>
+                        <p class="mainfont newp">会议内容：
+                        </p>
+                        <p class="mainfont newp">会议总结：
+                        </p>
+                        <p class="mainfont newp">备注：
+                        </p>
+                        <div class="item-select">
+                            <a href="javascript:void(0)" onclick='getDialog("prompt")' class="pale-pink">删除</a>
+                            <a class="pale-pink" href="javascript:void(0)" onclick='getDialog("new-box")'>修改</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="prompt">
+    <ul class="list replay-list" style="margin-top: 40px;">
+        <li class="replay_item">
+            <div class="item-left">
+                <img src="../../image/prompt.jpg" class="item-img">
+            </div>
+            <div class="item-right" style="margin-left: 4%;">
+                <div class="pale-pink" >
+                    <time></time>
+                </div>
+                <div class="item-content" style="width: 350px; margin-top: 20px;font-size: 20px;">
+                    你确定要执行删除操作？
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div style="margin-bottom: 20px;margin-left: 20px;">
+        <a href="javascript:void(0)" onclick='cancel("prompt")' style="margin-left: 60%;" class="mainfont">取消</a>
+        <a style="margin-right: 5%;float: right;" class="mainfont">Submit</a>
+    </div>
+
+
+</div>
+</body>
+</html>

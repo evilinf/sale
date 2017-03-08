@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>CSS Test Page</title>
+    <style type="text/css">
+        /*下面是修改主导航颜色开始*/
+        /*.venus-menu {*/
+            /*width: 100%;*/
+            /*padding: 0;*/
+            /*position: relative;*/
+            /*float: left;*/
+            /*list-style: none;*/
+            /*box-shadow: 0 0px 0px #dedede;*/
+            /*margin-left:0px; width: 900px;background: blue;*/
+            /*border:0px solid red;height:30px;*/
+            /*padding: 9px 0 0px; font-size: 14.25px; font-family: "Calibri";margin-top: 49px;*/
+        /*}*/
+        /*.venus-menu li {*/
+            /*display: inline-block;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+            /*float: left;*/
+            /*top:-8px;*/
+            /*line-height: 38px;*/
+            /*text-align:left;*/
+            /*position: relative;border:0px solid red;*/
+        /*}*/
+        /*.meunline{width:2px; height:40px;}*/
+
+
+        /*.venus-menu > li > a {*/
+            /*padding: 0px 27px;*/
+            /*font-size: 17px;*/
+            /*font-weight:bold;*/
+            /*color: #FFF;*/
+            /*line-height: 38px;*/
+            /*text-decoration: none;*/
+            /*display: block;*/
+            /*-webkit-transition: color 0.2s linear, background 0.2s linear;*/
+            /*-moz-transition: color 0.2s linear, background 0.2s linear;*/
+            /*-o-transition: color 0.2s linear, background 0.2s linear;*/
+            /*transition: color 0.2s linear, background 0.2s linear;*/
+        /*}*/
+        /*.venus-menu li:hover > a, .venus-menu li.active a {*/
+            /*background-color:#053fad;*/
+            /*color: Yellow;*/
+        /*}*/
+        /*/!*上面是修改主导航颜色结束*!/*/
+        /*.venus-menu li.bar { display: block; width: 2px; height: 11px; margin: 13px 4px 0 12px; background: url(../image/index/bar.gif) no-repeat; }*/
+        /*/!**/
+        /*.venus-menu > li > a i {*/
+        /*color: #FFF;*/
+        /*}*/
+        /*.venus-menu > li:hover > a i, .venus-menu li.active a i {*/
+        /*color: #FFF;*/
+        /*}*/
+        /**!/*/
+        /*.venus-menu ul, .venus-menu ul li ul {*/
+            /*list-style: none;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+            /*display: none;*/
+            /*position: absolute;*/
+            /*z-index: 99;*/
+            /*width: 140px;*/
+
+        /*}*/
+        /*.venus-menu ul {*/
+            /*top: 38px;*/
+            /*left: 0;*/
+            /*padding-top: 20px;*/
+
+        /*}*/
+
+
+        /*/!*下面是修改倒三角箭头颜色开始*!/*/
+        /*.venus-menu > li > ul > li:first-child a:before {*/
+            /*content: '';*/
+            /*position: absolute;*/
+            /*bottom: 48px;*/
+            /*left: 45%;*/
+            /*margin-left: -48px;*/
+            /*width: 0;*/
+            /*height: 0;*/
+            /*border-left: 8px solid rgba(255, 255, 255, 0);*/
+            /*border-right: 8px solid rgba(255, 255, 255, 0);*/
+            /*border-bottom: 8px solid #2081B9;*/
+
+        /*}*/
+        /*.venus-menu > li > ul > li ul li:first-child a:before {*/
+            /*content: '';*/
+            /*position: absolute;*/
+            /*bottom: 16px;*/
+            /*left: 45%;*/
+            /*margin-left: -71px;*/
+            /*width: 0;*/
+            /*height: 0;*/
+            /*border-top: 8px solid rgba(255, 255, 255, 0);*/
+            /*border-right: 8px solid #2081B9;*/
+            /*border-bottom: 8px solid rgba(255, 255, 255, 0);*/
+
+        /*}*/
+        /*/!*至此是修改倒三角箭头颜色结束*!/*/
+
+
+        /*.venus-menu ul li ul {*/
+            /*top: 0;*/
+            /*left: 100%;*/
+            /*padding-left: 10px;*/
+            /*border:1px solid red;*/
+        /*}*/
+        /*.venus-menu ul li {*/
+            /*clear: both;*/
+            /*width: 180px;*/
+            /*border: none;*/
+        /*}*/
+
+
+
+
+        /*/!*下面是修改下拉菜单光标未移上去颜色开始*!/*/
+        /*.venus-menu ul li a {*/
+            /*padding: 4px 15px;*/
+            /*width: 100%;*/
+            /*color: #fff;*/
+            /*font-size: 16px;*/
+            /*text-decoration: none;*/
+            /*display: inline-block;*/
+            /*float: left;*/
+            /*clear: both;*/
+            /*background: #2081B9;*/
+            /*box-sizing: border-box;*/
+            /*-moz-box-sizing: border-box;*/
+            /*-webkit-box-sizing: border-box;*/
+            /*-webkit-transition: background 0.2s linear;*/
+            /*-moz-transition: background 0.2s linear;*/
+            /*-o-transition: background 0.2s linear;*/
+            /*transition: background 0.2s linear;*/
+        /*}*/
+        /*/!*至此是修改下拉菜单光标未移上去颜色结束*!/*/
+        /*/!*下面是修改下拉菜单光标移上去颜色开始*!/*/
+        /*.venus-menu ul li:hover > a {*/
+            /*background: #1A6491;*/
+        /*}*/
+        /*.venus-menu > li > ul > li:first-child:hover a:before {*/
+            /*border-bottom-color: #1A6491;*/
+        /*}*/
+        /*.venus-menu > li > ul > li ul li:first-child:hover a:before {*/
+            /*border-right-color: #1A6491;*/
+        /*}*/
+        body{
+            font:1em Verdana, Arial, Helvetica, sans-serif;
+            background-color:#ffffff;
+            color:#000000;
+            margin:1em 0 0 1em;
+        }
+        #nav,#nva ul{
+            padding:0;
+            margin:0;
+            list-style:none;
+        }
+        #nav li{
+            float:left;
+            position:relative;
+            width:10em;
+            border:1px solid #b0c4de;
+            background-color:#e7edf5;
+            color:#2d486c;
+            font-size:80%;
+            margin-right:1em;
+        }
+        #nav a:link,#nav a:visited{
+            display:block;
+            text-decoration:none;
+            padding-left:1em;
+            color:#2d486c;
+        }
+        * html #nav a{
+            width:100%
+        }
+        #nav ul{
+            display:none;
+            position:absolute;
+            padding:0;
+        }
+        #nav ul li{
+            border:0 none transparent;
+            border-bottom:1px solid #e7edf5;
+            border-top:.5em solid #fff;
+            background-color:#f1f5f9;
+            font-size:100%;
+            margin-bottom:-1px;
+            margin-top:1px;
+            padding:0;
+            list-style-type:none;
+        }
+        #nav li:hover ul{
+            display:block;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <ul id="nav">
+
+        <li><a href="#">starters</a>
+            <ul>
+                <li><a href="#">fish</a></li>
+                <li><a href="#">book</a></li>
+                <li><a href="#">food</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">main course</a>
+            <ul>
+                <li><a href="#">math</a></li>
+                <li><a href="#">english</a></li>
+                <li><a href="#">chinese</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">car</a>
+            <ul>
+                <li><a href="#">benz</a></li>
+                <li><a href="#">bmw</a></li>
+                <li><a href="#">changcheng</a></li>
+            </ul>
+        </li>
+
+    </ul>
+<!--<ul class="venus-menu"style="border:0px solid red;">-->
+
+
+
+    <!--<li class="bar"></li>-->
+
+    <!--<li class="limenu"><a href="/service.aspx">MAINSERVICES</a>-->
+
+        <!--<ul id="item"  style="border: 1px solid red; display: none;">-->
+            <!--<li style=""><a href="/service.aspx">AirFreight</a></li>-->
+            <!--<li style=""><a href="/service.aspx">GroundFreight</a></li>-->
+            <!--<li style=""><a href="/service.aspx">OceanFreight</a></li>-->
+            <!--<li style=""><a href="/service.aspx">Warehousing</a></li>-->
+            <!--<li style=""><a href="/service.aspx">CargoInsurance</a></li>-->
+            <!--<li style=""><a href="/service.aspx">CustomsService</a></li>-->
+            <!--<li style=""><a href="/service.aspx">Special RouteDelivery</a></li>-->
+    <!--</ul>-->
+
+<!--</li>-->
+
+<!--<li class="bar"></li>-->
+
+<!--<li class="limenu"><a href="/contact.aspx">CONTACT US</a>-->
+
+    <!--<ul style="border:0px solid red;">-->
+
+    <!--</ul>-->
+
+<!--</li>-->
+
+<!--</ul>-->
+</div>
+</body>
+</html>
+
+

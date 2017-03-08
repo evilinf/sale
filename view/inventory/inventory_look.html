@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../js/own.js" style="text/javascript"></script>
+    <link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../../css/admin.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <title></title>
+</head>
+<body>
+<div class="col-lg-9" style="margin-right: 10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading blue">
+            <div><a class="mainfont">库存查看</a></div>
+        </div>
+        <form class="form-inline" style="margin:2% 0 0 2%;">
+            <div class="form-group">
+                <!--<label class="sr-only">输入名</label>-->
+                选择要使用查询的参数名
+                <select type="text" class="form-control" style="width: 150px;">
+                    <option>存货类型</option>
+                    <option>存货名称</option>
+                    <option>存货编号</option>
+                    <option>入库时间</option>
+                </select>
+                <button type="submit" class="btn btn-default" style="float: right;">查询</button>
+                <input type="text" class="form-control" style="width: 200px;float: right;">
+            </div>
+        </form>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>存货类型</th>
+                    <th>存货名称</th>
+                    <th>存货编号</th>
+                    <th>数量</th>
+                    <th>入库时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.person-in{
+    background-color: #2ca106;
+    color: white;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+.person-ask{
+    width: 100%;
+    height: 50px;
+}
+.person-ask a{
+    float: left;
+}
+.member{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #e0ffcf;
+    list-style: none;
+}
+.person-infor{
+    color: white;
+    /*margin-top: 180px;*/
+    /*margin-top: 100%;*/
+    margin-left: -60%;
+    text-shadow: #009900;
+    font-size: 1.25em;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    style:none;
+}
+.member-item{
+    margin-right: 30px;
+    margin-top: 1%;
+    width: 200px;
+    height: 300px;
+    display: inline-table;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+.member-back, .member-back img{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*background-image: url(../image/iPhoto.jpg);*/
+}
+.photo{
+    width:50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.photo img{
+    width:50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.member_name{
+    margin-left: 80px;
+    margin-top: -20px;
+}
+.member-info{
+    margin-left: 10px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+.per-width{
+    width: 85%;
+    height: 8%;
+    font-size: 0.7em;
+    margin-top: -4%;
+}
+.member_oper{
+    height: 30px;
+}
+.member_oper a{
+    float: left;
+}
+#add{
+    display: none;
+}
+#update{
+    display: none;
+}
+#person{
+    z-index: 99;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    width: 240px;
+    height: 360px;
+    position: fixed;
+    margin-top: -8%;
+    margin-left: 30%;
+    display: none;
+}
